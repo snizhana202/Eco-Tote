@@ -58,7 +58,7 @@
     font-weight: 600;
 }
 
-.nav-link::after {
+/*.nav-link::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -73,7 +73,7 @@
 .nav-link:focus::after,
 .nav-link.active::after {
     width: 100%;
-}
+}*/
 
 /* ==========================================
    CONTACTS STYLES
