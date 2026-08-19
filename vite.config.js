@@ -6,7 +6,6 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: process.env.VERCEL ? '/' : '/Eco-Tote/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
