@@ -1,17 +1,17 @@
 .assortment {
-  background-color: #ebf8ed;
   padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title-assortment {
-  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #030a06;
-  margin-bottom: 32px;
 }
 
 .assortment-menu {
@@ -24,12 +24,12 @@
 .assortment-item {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .assortment-img {
   width: 100%;
   border-radius: 32px;
-  margin-bottom: 16px;
 }
 
 .assortment-card {
@@ -37,35 +37,21 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  margin-bottom: 16px;
 }
 
-.assortment-name {
-  font-family: 'Fira Sans', sans-serif;
+.assortment-name,
+.assortment-discription,
+.assortment-price {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 160%;
   text-align: center;
   color: #030a06;
 }
 
 .assortment-discription {
-  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  text-align: center;
-  color: #030a06;
-  margin-bottom: 8px;
-}
-
-.assortment-price {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 160%;
-  text-align: center;
-  color: #030a06;
+  font-size: 16px;
 }
 
 .assortment-button {
@@ -76,12 +62,11 @@
   width: 100%;
   height: 40px;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #030a06;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   cursor: pointer;
-  margin-top: auto;
 }
 
 .assortment-button:active {
@@ -99,6 +84,7 @@
 @media screen and (min-width: 768px) {
   .assortment {
     padding: 64px 0;
+    gap: 32px;
   }
 
   .assortment-menu {
@@ -108,14 +94,11 @@
 
   .assortment-item {
     width: calc((100% - 24px) / 2);
+    gap: 16px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .assortment {
-    padding: 64px 0;
-  }
-
   .title-assortment {
     font-size: 36px;
   }
