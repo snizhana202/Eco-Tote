@@ -1,0 +1,50 @@
+<div class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" type="button" aria-label="Закрити">
+      &times;
+    </button>
+    <h3 class="modal-title">Оформлення замовлення</h3>
+    <form class="order-form" novalidate>
+      <label class="modal-label">
+        <p>Ім'я</p>
+        <input
+          class="modal-input"
+          type="text"
+          name="name"
+          placeholder="Іван"
+          pattern="^[А-Яа-яЇїІіЄєҐґA-Za-z\s'-]{2,30}$"
+          required
+        />
+        <span class="error-message"></span>
+      </label>
+      <label class="modal-label">
+        <p>Номер телефону</p>
+        <input
+          class="modal-input"
+          type="tel"
+          name="phone"
+          placeholder="+380991234567"
+          pattern="^\+?[0-9]{10,13}$"
+          required
+        />
+        <span class="error-message"></span>
+      </label>
+      <label class="modal-label">
+        <p>Адреса доставки</p>
+        <input
+          class="modal-input"
+          type="text"
+          name="address"
+          placeholder="м. Київ, вул. Хрещатик, 1"
+          minlength="5"
+          maxlength="100"
+          required
+        />
+        <span class="error-message"></span>
+      </label>
+      <button class="modal-submit" type="submit">Підтвердити замовлення</button>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
