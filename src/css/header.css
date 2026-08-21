@@ -16,7 +16,7 @@ section[id] {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 24px;
+  gap: 18px;
 }
 
 /* ==========================================
@@ -62,23 +62,6 @@ section[id] {
 .nav-link.active {
   font-weight: 600;
 }
-
-/*.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #1a1a1a;
-    transition: width 300ms ease-in-out;
-}
-
-.nav-link:hover::after,
-.nav-link:focus::after,
-.nav-link.active::after {
-    width: 100%;
-}*/
 
 /* ==========================================
    CONTACTS STYLES
@@ -170,9 +153,9 @@ section[id] {
 }
 
 .mobile-contacts-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 20px;
   align-items: flex-start;
 }
@@ -206,6 +189,10 @@ section[id] {
 
   .header {
     padding: 16px 32px;
+  }
+
+  .contact-list {
+    display: flex;
   }
 }
 
