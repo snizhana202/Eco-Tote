@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .hero-content-left {
@@ -59,7 +61,6 @@
 .hero-block {
   border-radius: 40px;
   width: 100%;
-  margin: 0 auto;
   height: 285px;
   background-image: url('/img/hero/hero-mob.webp');
   background-size: cover;
@@ -90,7 +91,6 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding: 32px 32px;
-    height: 575px;
     display: block;
     width: 100%;
   }
@@ -100,7 +100,6 @@
     display: flex;
     flex-direction: column;
     max-width: 704px;
-    margin: 0 auto;
     gap: 20px;
   }
 
@@ -137,7 +136,6 @@
   .hero-block {
     border-radius: 40px;
     width: 100%;
-    margin: 0 auto;
     height: 285px;
     background-image: url('/img/hero/hero-tab.webp');
     background-size: cover;
@@ -165,9 +163,8 @@
 @media screen and (min-width: 1440px) {
   .hero {
     padding: 32px 64px;
-    height: 815px;
-    display: block;
     width: 100%;
+    gap: 26px;
   }
 
   .container-hero {
@@ -183,7 +180,6 @@
   .hero-block {
     border-radius: 40px;
     width: 100%;
-    margin: 0 auto;
     height: 498px;
     background-image: url('/img/hero/hero.webp');
     background-size: cover;
