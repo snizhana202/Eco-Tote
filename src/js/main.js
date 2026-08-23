@@ -154,3 +154,7 @@ mobileNavLinks.forEach(link => {
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') closeMobileMenu();
 });
+
+
+import { renderStars } from './feedbacks.js';
+renderStars();

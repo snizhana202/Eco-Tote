@@ -1,212 +1,109 @@
-/* ==============MOBILE------------------ */
-
-
-@media screen and (min-width: 320px) {
-
-    .feedbacks {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        max-width: 100%;
-    }
-
-    .page-title {
-        width: 100%;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
-        text-align: center;
-        margin-bottom: 32px;
-    }
-
-    .feedback-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-
-    }
-
-    .feedback-text {
-        margin-bottom: 24px;
-    }
-
-
-    /* .feedback-person,
-    .feedback-person:last-child {
-        width: 340px;
-        padding-bottom: 40px;
-    }
-
-    .feedback-person:last-child {
-        padding-bottom: 0;
-    } */
-
-
-    /* star */
-    .stars-img {
-        width: 136px;
-        margin-bottom: 12px;
-
-    }
-
-    .stars-icon {
-        fill: #3ac04c;
-    }
-
-    .star-list {
-        display: flex;
-        gap: 4px;
-
-
-
-
-    }
-
-    /* 
-    .stars-icon-place {
-        width: 24px;
-
-
-
-    }
-
-    .stars-img {
-        margin-bottom: 24px;
-    }
-
-    .feedback-text {
-        margin-bottom: 24px;
-    } */
-
-
-    /* star end */
-
-    .feedback-text {
-        margin-bottom: 12px;
-        font-size: 20px;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-    }
-
-    .last-text {
-        margin-top: 24px;
-    }
-
-
-
-    .feedback-person-name {
-        font-family: "Fira Sans", sans-serif;
-        font-weight: 600;
-        line-height: 1.6;
-
-    }
-
-
-
+.feedbacks {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 0;
 }
 
-/* =====================TABLET============================== */
+.page-title {
+  font-size: 36px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
 
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
 
+.feedback-person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stars-img {
+  width: 136px;
+}
+
+.stars-icon {
+  fill: #3ac04c;
+}
+
+.star-list {
+  display: flex;
+  gap: 4px;
+}
+
+.feedback-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-text {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.feedback-person-name {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+}
 
 @media screen and (min-width: 768px) {
+  .feedbacks {
+    padding: 64px 0;
+  }
 
-    .feedbacks {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
+  .feedback-list {
+    gap: 50px;
+  }
 
-    .feedback-list {
-        gap: 24px;
-        row-gap: 32px;
-    }
+  .feedback-person {
+    gap: 15px;
+  }
 
-    .feedback-person,
-    .feedback-person:last-child {
-        width: 340px;
-    }
+  .feedback-overlay {
+    gap: 12px;
+  }
 
-    .stars-img {
-        margin-bottom: 24px;
-    }
-
-    .feedback-text {
-        margin-bottom: 24px;
-    }
-
+  .feedback-person {
+    width: 340px;
+  }
 }
 
-/* =====================DESKTOP=================*/
-
 @media screen and (min-width: 1440px) {
+  .page-title {
+    width: 560px;
+    font-size: 48px;
+    margin: 0 auto;
+  }
 
+  .feedbacks {
+    gap: 50px;
+  }
 
-    .page-title {
-        width: 560px;
-        font-size: 48px;
-        margin: 0 auto;
-    }
+  .feedback-list {
+    gap: 30px;
+  }
 
-    .feedback-list {
-        margin-top: 80px;
-    }
+  .feedback-person {
+    width: 310px;
+  }
 
-    .feedback-person,
-    .feedback-person:last-child {
-        width: 310px;
+  .feedback-overlay {
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+  }
 
-
-    }
-
-
-
-
-
-
-
-    /* .feedbacks {
-
-            padding: 64px;
-            width: 1440px;
-            height: 506px;
-        }
-
-        .page-title {
-            width: 560px;
-            height: 116px;
-            font-size: 48px;
-
-        }
-
-        .feedback-list {
-            width: 1312px;
-            height: 182px;
-            width: calc((100%-72)/4);
-        }
-
-        .feedback-person,
-        .feedback-person:last-child {
-            width: 310px;
-            height: 182px;
-
-        }
-
-        .feedback-text {
-
-            padding: 24px 0;
-
-        } */
-
-
-
-    .feedback-overlay {
-
-        margin: 0 auto;
-        height: 131px;
-        position: relative;
-    }
-
-    .feedback-person-name {
-        position: absolute;
-        bottom: 0;
-    }
+  .feedback-person-name {
+    position: absolute;
+    bottom: 0;
+  }
 }
