@@ -1,4 +1,4 @@
-function renderStars() {
+export function renderStars() {
   const feedbackItems = document.querySelectorAll('.feedback-person');
 
   feedbackItems.forEach(item => {
@@ -21,5 +21,3 @@ function renderStars() {
     starsContainer.innerHTML = starsHTML;
   });
 }
-
-renderStars();
