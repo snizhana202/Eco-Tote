@@ -1,3 +1,5 @@
+import iconsUrl from '../img/icons.svg';
+
 export function renderStars() {
   const feedbackItems = document.querySelectorAll('.feedback-person');
 
@@ -11,7 +13,7 @@ export function renderStars() {
       starsHTML += `
         <li class="stars-icon-place">
           <svg class="stars-icon" width="20" height="21">
-            <use href="/img/icons.svg#${iconId}"></use>
+            <use href="${iconsUrl}#${iconId}"></use>
           </svg>
         </li>
       `;
