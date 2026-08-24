@@ -45,7 +45,7 @@ function clearError(input) {
   input.classList.remove('invalid');
 }
 
-const namePattern = /^[А-Яа-яЇїІіЄєҐґA-Za-z\s'-]{2,30}$/;
+const namePattern = /^[А-Яа-яЇїІіЄєҐґA-Za-z]+([\s'-][А-Яа-яЇїІіЄєҐґA-Za-z]+)*$/;
 const phonePattern = /^\+?[0-9]{10,13}$/;
 
 nameInput.addEventListener('input', () => {
@@ -78,7 +78,7 @@ function validateForm() {
   if (!namePattern.test(nameValue)) {
     showError(
       nameInput,
-      "Введіть коректне ім'я (тільки літери, 2-30 символів)."
+      "Введіть коректне ім'я (2-30 символів)."
     );
     isValid = false;
   } else {
