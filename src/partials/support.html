@@ -1,84 +1,70 @@
-<section class="support" id="contacts">
-  <div class="container support-container">
-    <div class="support-layout">
-      <div class="support-layout-scnd">
-        <div class="support-content">
-          <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
-          <p class="support-text">Ми тут, щоб допомогти!</p>
-        </div>
-        <form class="support-form">
-          <div class="support-input-content">
-            <label for="name" class="support-text-scnd">Ім'я</label>
-            <input
-              class="support-input"
-              type="text"
-              id="name"
-              name="name"
-              minlength="5"
-              maxlength="64"
-              required
-              placeholder="Іван"
-            />
-            <p class="error-text">Error text</p>
-          </div>
-          <div class="support-input-content">
-            <label for="email" class="support-text-scnd"
-              >Електронна пошта</label
-            >
-            <input
-              class="support-input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="hello@ecotote.com"
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              required
-            />
-            <p class="error-text">Error text</p>
-          </div>
-          <div class="support-input-content">
-            <label for="message" class="support-text-scnd">Повідомлення</label>
-            <textarea
-              class="support-input textarea"
-              id="message"
-              name="message"
-              maxlength="500"
-              placeholder="Введіть своє повідомлення..."
-            ></textarea>
-          </div>
-          <button class="support-btn" type="submit">Надіслати</button>
-        </form>
-      </div>
-      <div class="img-wrapper">
-        <picture>
-          <source
-            srcset="
-              /img/support/support.webp    1x,
-              /img/support/support-2x.webp 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <source
-            srcset="
-              /img/support/support-tab.webp    1x,
-              /img/support/support-tab-2x.webp 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              /img/support/support-mob.webp    1x,
-              /img/support/support-mob-2x.webp 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <img
-            class="img"
-            src="/img/support/support.webp"
-            alt="Ілюстрація підтримки клієнтів"
-          />
-        </picture>
-      </div>
+<section class="support container" id="contacts">
+  <div class="support-layout">
+    <div class="support-content">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="support-text">Ми тут, щоб допомогти!</p>
     </div>
+    <form class="support-form" novalidate>
+      <div class="support-input-content">
+        <label for="name" class="support-text-scnd">Ім'я</label>
+        <input
+          class="support-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Іван"
+        />
+        <p class="error-text">Error text</p>
+      </div>
+      <div class="support-input-content">
+        <label for="email" class="support-text-scnd">Електронна пошта</label>
+        <input
+          class="support-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="hello@ecotote.com"
+        />
+        <p class="error-text">Error text</p>
+      </div>
+      <div class="support-input-content">
+        <label for="message" class="support-text-scnd">Повідомлення</label>
+        <textarea
+          class="support-input textarea"
+          id="message"
+          name="message"
+          maxlength="500"
+          placeholder="Введіть своє повідомлення..."
+        ></textarea>
+      </div>
+      <button class="support-btn" type="submit">Надіслати</button>
+    </form>
+  </div>
+  <div class="img-wrapper">
+    <picture>
+      <source
+        srcset="/img/support/support.webp 1x, /img/support/support-2x.webp 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          /img/support/support-tab.webp    1x,
+          /img/support/support-tab-2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          /img/support/support-mob.webp    1x,
+          /img/support/support-mob-2x.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="img"
+        src="/img/support/support.webp"
+        alt="Ілюстрація підтримки клієнтів"
+      />
+    </picture>
   </div>
 </section>

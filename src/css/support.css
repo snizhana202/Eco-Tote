@@ -1,45 +1,35 @@
-.support-container {
+.support {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 32px 0;
+  gap: 32px;
 }
 
 .support-layout {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .support-content {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 32px;
 }
 
 .support-title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #030a06;
 }
 
 .support-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
-  color: #030a06;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 .support-form {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
 }
@@ -48,14 +38,10 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  position: relative;
 }
 
 .support-text-scnd {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
-  color: #030a06;
 }
 
 .support-input {
@@ -63,19 +49,17 @@
   border-radius: 6px;
   padding-block: 8px;
   padding-inline: 12px;
-  width: 288px;
   height: 42px;
   background-color: rgba(3, 10, 6, 0.05);
   outline: none;
-  margin-bottom: 12px;
 }
 
-.support-input:not(:placeholder-shown):invalid {
+.support-input.invalid {
   border-color: #d64040;
   color: #d64040;
 }
 
-.support-input:not(:placeholder-shown):invalid::placeholder {
+.support-input.invalid::placeholder {
   color: #d64040;
 }
 
@@ -83,32 +67,24 @@
   display: none;
   font-size: 12px;
   color: #d64040;
-  position: absolute;
-  bottom: 0;
 }
 
-
-.support-input:not(:placeholder-shown):invalid ~ .error-text {
+.support-input.invalid ~ .error-text {
   display: block;
 }
 
 .textarea {
   resize: none;
-  width: 288px;
   height: 180px;
 }
 
 .support-btn {
   border: 1px solid #030a06;
   border-radius: 6px;
-  padding-block: 12px;
-  padding-inline: 24px;
-  width: 288px;
   height: 50px;
   background-color: #030a06;
   color: #fff;
   cursor: pointer;
-  margin-bottom: 24px;
 }
 
 .support-btn:active {
@@ -123,7 +99,6 @@
   border-color: #030a06;
   color: #fff;
   opacity: 0.2;
-  
 }
 
 .img-wrapper {
@@ -132,30 +107,21 @@
   overflow: hidden;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* --------------- TABLET ---------------- */
 
 @media only screen and (min-width: 768px) {
-
-  .support-layout {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    } 
-  
-    .support-title {
-    max-width: 468px;
-  }
-
-  .support-input {
-    width: 704px;
-  }
-
-  .support-btn {
-    width: 249px;
+  .support {
+    padding: 64px 0;
   }
 
   .img-wrapper {
-    width: 704px;
     height: 428px;
   }
 }
@@ -163,16 +129,26 @@
 /* --------------- DESCTOP ---------------- */
 
 @media only screen and (min-width: 1440px) {
-  .support-layout {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    display: flex;
+  .support {
+    justify-content: center;
+    flex-direction: row;
     gap: 24px;
   }
 
+  .support-layout {
+    gap: 32px;
+  }
+
+  .support-content {
+    gap: 30px;
+  }
+
   .support-form {
-    flex: 1;
-    max-width: 644px;
+    gap: 32px;
+  }
+
+  .support-input-content {
+    gap: 10px;
   }
 
   .img-wrapper {
@@ -187,7 +163,11 @@
   }
 
   .support-input {
-    width: 644px;
+    height: 50px;
+  }
+
+  .textarea {
+    height: 160px;
   }
 
   .support-input:hover::placeholder {
