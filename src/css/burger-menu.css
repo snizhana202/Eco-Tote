@@ -57,11 +57,20 @@
 }
 
 .mobile-nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   font-size: 24px;
   color: #030a06;
   text-decoration: none;
   transition: color 200ms ease-in;
+}
+
+.mobile-nav-link [data-lucide] {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .mobile-nav-link:hover,
